@@ -3,12 +3,14 @@ package com.hotel.booking.model;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
+import lombok.AllArgsConstructor;
 
 import java.time.LocalDate;
 
 @Entity
 @Data
-@Builder(toBuilder = true)
+@Builder
+@AllArgsConstructor
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,12 +23,7 @@ public class Booking {
     private LocalDate checkOutDate;
     private String status;
 
-    public static class BookingBuilder {
-        public BookingBuilder validateDates() {
-            if (checkInDate != null && checkOutDate != null && checkOutDate.isBefore(checkInDate)) {
-                throw new IllegalArgumentException("Check-out date must be after check-in date.");
-            }
-            return this;
-        }
+    public Booking() {
+
     }
 }
