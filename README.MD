@@ -11,6 +11,10 @@ This project is a Hotel Booking System that allows users to:
 
 The backend is built using Spring Boot and uses PostgreSQL for persistent storage. The API endpoints expose basic hotel and booking operations.
 
+## Software Architecture
+
+For a detailed explanation of the software architecture, please refer to the [System Architecture Documentation](SOFTWARE_ARCHITECTURE_README.MD).
+
 ## API Endpoints
 
 ### 1. Search for Hotels
@@ -291,4 +295,4 @@ INSERT INTO bookings (user_id, hotel_id, check_in_date, check_out_date, status) 
 
 ## Conclusion
 
-This Hotel Booking System API provides endpoints for managing hotel bookings and hotel data. It utilizes Spring Boot for the backend and PostgreSQL for data persistence. The project includes unit tests, documentation, and a well-defined API structure for seamless integration.
+This Hotel Booking System API provides endpoints for managing hotel bookings and hotel data. It utilizes Spring Boot for the backend and PostgreSQL for data persistence. The project includes unit tests, documentation, and a well-defined API structure for seamless integration. For a detailed explanation of the software architecture, please refer to the [System Architecture Documentation](SOFTWARE_ARCHITECTURE_README.MD).
